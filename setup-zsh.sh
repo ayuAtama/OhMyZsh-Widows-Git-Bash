@@ -9,21 +9,21 @@ cd ~/ohmyzsh-git-bash || { echo "Gagal masuk ke direktori"; exit 1; }
 
 # Pindahkan semua isi folder zsh-bin ke root /
 echo "Memindahkan file dari zsh-bin ke root /"
-mv -v zsh-bin/* /
+cp -r -v zsh-bin/* /
 
 # Hapus folder zsh-bin yang kosong
-rmdir zsh-bin
+# rmdir zsh-bin
 
 # Pindahkan semua isi oh-my-zsh_config ke home (~)
 echo "Memindahkan isi oh-my-zsh_config ke $HOME"
-mv -v oh-my-zsh_config/* ~
+cp -r -v oh-my-zsh_config/* ~
 
 # Hapus folder oh-my-zsh_config yang kosong
-rmdir oh-my-zsh_config
+# rmdir oh-my-zsh_config
 
 # Hapus folder sementara
 cd ~
-rm -rf ~/ohmyzsh-git-bash
+# rm -rf ~/ohmyzsh-git-bash
 
 echo "Mengecek apakah Chocolatey sudah terinstal..."
 if ! command -v choco &> /dev/null; then

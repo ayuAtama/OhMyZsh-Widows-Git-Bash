@@ -23,3 +23,4 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ayuAtama/OhMyZsh-Widows-Gi
 4. UwU together
 
 ## Credits :
+IDK
